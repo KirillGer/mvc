@@ -12,19 +12,15 @@ class BookController {
 		return $books->getData();
 	}
 
-public function addBook()
+	public function __construct(protected $newData)
 	{
-		$books = new BookModel;
-		array_push($data['name_book'], 'Fathers & Childrens');
-		array_push($data['author'], 'Ivan Turgenev');
-		array_push($data['category'], 'romance' );
+		$newData = new BookModel;
+		$newData = [];
+		
 	}
 
-	public function deleteBook()
+	public function __construct(protected $deleteData)
 	{
-		$books = new BookModel;
-		$data = array_diff($data, ['name_book'], [1],);
-		$data = array_diff($data, ['author'], [1]);
-		$data = array_diff($data, ['category'], [1]);
+		
 	}
 }
