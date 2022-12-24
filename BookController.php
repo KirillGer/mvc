@@ -28,5 +28,3 @@ public function addBook()
 		$data = array_diff($data, ['category'], [1]);
 	}
 }
-
-}
